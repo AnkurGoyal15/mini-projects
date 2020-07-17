@@ -1,0 +1,45 @@
+from googletrans import Translator
+
+s=str(input("say anything...: "))
+print("enter the language name in which you want to convert : ")
+a=str(input())
+t=Translator()
+if(a=='french'):
+    t1=t.translate(s,src='en',dest='fr')
+    print(t1.text)
+elif(a=='german'):
+    t1=t.translate(s,src='en',dest='de')
+    print(t1.text)
+elif(a=='japanese'):
+    t1=t.translate(s,src='en',dest='ja')
+    print(t1.text)
+elif(a=='arabic'):
+    t1=t.translate(s,src='en',dest='ar')
+    print(t1.text)
+elif(a=='hindi'):
+    t1=t.translate(s,src='en',dest='hi')
+    print(t1.text)
+elif(a=='chinese'):
+    t1=t.translate(s,src='en',dest='zh')
+    print(t1.text)    
+elif(a=='dutch'):
+    t1=t.translate(s,src='en',dest='nl')
+    print(t1.text)
+elif(a=='irish'):
+    t1=t.translate(s,src='en',dest='ga')
+    print(t1.text)
+elif(a=='latin'):
+    t1=t.translate(s,src='en',dest='la')
+    print(t1.text)
+elif(a=='romanian'):
+    t1=t.translate(s,src='en',dest='ro')
+    print(t1.text)
+elif(a=='sanskrit'):
+    t1=t.translate(s,src='en',dest='sa')
+    print(t1.text)
+elif(a=='turkey'):
+    t1=t.translate(s,src='en',dest='tr')
+    print(t1.text)
+elif(a=='russian'):
+    t1=t.translate(s,src='en',dest='ru')
+    print(t1.text)
