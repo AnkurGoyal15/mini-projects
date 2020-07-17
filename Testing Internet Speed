@@ -1,0 +1,18 @@
+import speedtest
+
+s=speedtest.Speedtest()
+a=int(input('''what you want to know:
+    1. Upload speed
+    2. download speed
+    3. ping'''))
+print()
+if(a==1):
+    print(s.upload())
+elif(a==2):
+    print(s.download())
+elif(a==3):
+    server=[] #server
+    s.get_servers(server)
+    print(s.results.ping)
+else:
+    pass
