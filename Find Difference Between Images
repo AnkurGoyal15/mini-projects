@@ -1,3 +1,7 @@
+first download 2 images and convert them into jpg format.Then use their name as given in my example
+
+
+
 from PIL import Image ,ImageChops
 img1=Image.open("1.jpg")
 img2=Image.open("2.jpg")
